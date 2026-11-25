@@ -49,8 +49,9 @@ h2 { margin: 0; font-size: 25px; line-height: 1.18; letter-spacing: -.02em; }
 input, select, textarea { width: 100%; min-height: 44px; border: 1px solid #d7d2c8; border-radius: 0; background: #fffefa; padding: 10px 12px; color: var(--ink); }
 input::placeholder, textarea::placeholder { color: #8a9189; }
 textarea { min-height: 76px; resize: vertical; }
-.time-fields { display: flex; align-items: end; gap: 11px; min-width: 0; margin: 2px 0 0; padding: 0; border: 0; }
-.time-fields legend { float: left; width: 100%; }
+.time-fields { display: block; min-width: 0; margin: 2px 0 0; padding: 0; border: 0; }
+.time-fields legend { float: none; padding: 0; }
+.time-row { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 10px; align-items: end; }
 .time-fields div { flex: 1; min-width: 0; }
 .time-fields div label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 11px; }
 .time-fields input { padding-inline: 8px; }

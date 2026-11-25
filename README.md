@@ -90,3 +90,12 @@ HTML, CSS, JavaScript, Visual Studio Code, GitHub, Chrome y archivos Markdown. A
 - [x] Prompts y decisiones registrados.
 - [x] Pruebas de lógica y navegador realizadas.
 - [x] Archivos publicados en el repositorio público.
+
+
+## Ajuste visual de los horarios
+
+**Prompt de corrección:**
+
+> Los campos Desde y Hasta quedan de 18 px de ancho en escritorio. Separá el título Horario de la fila de controles, mantené las etiquetas asociadas y asegurá un ancho legible también a 320 px. Verificá que cada campo tenga al menos 100 px.
+
+La prueba de ancho reprodujo el problema. Se reemplazó la distribución del grupo por una fila interior de dos columnas, con el título por encima.
