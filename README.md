@@ -2,9 +2,15 @@
 
 ## 🧩 Datos generales
 
-Estudiante: Sara Cohen. Club Entre Líneas.  
-Repositorio: `2023saracohen-yeshurun`.  
-Proyecto: agenda local de mesas de estudio.
+| Campo | Detalle |
+| --- | --- |
+| Integrante 1 | Sara Cohen |
+| Integrante 2 | No corresponde: trabajo individual |
+| Modelos de IA utilizados | ChatGPT; GPT-6 Luna (implementación y revisión) |
+| Tecnologías del proyecto | HTML5, CSS3, JavaScript, Markdown, Visual Studio Code y GitHub |
+| Link del repositorio | https://github.com/2023saracohen-yeshurun/turnos-club-estudio |
+
+---
 
 ## 📄 Sketch
 
