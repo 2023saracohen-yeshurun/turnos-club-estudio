@@ -89,4 +89,4 @@ HTML, CSS, JavaScript, Visual Studio Code, GitHub, Chrome y archivos Markdown. A
 - [x] Sketch previo al código.
 - [x] Prompts y decisiones registrados.
 - [x] Pruebas de lógica y navegador realizadas.
-- [ ] Publicación verificada.
+- [x] Archivos publicados en el repositorio público.
