@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="Reservá un encuentro de estudio en Entre Líneas, el club de Sara Cohen.">
+  <title>Agenda de encuentros · Entre Líneas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="#main" aria-label="Entre Líneas, inicio"><span class="wordmark-mark" aria-hidden="true">E<span>L</span></span><span>ENTRE LÍNEAS<small>CLUB DE ESTUDIO</small></span></a>
+      <span class="header-note">UN LUGAR PARA PENSAR EN COMPAÑÍA</span>
+      <span class="issue">AGENDA <span>·</span> 01</span>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-line"></span> EL TIEMPO TAMBIÉN SE ESTUDIA</p>
+        <div class="intro-row">
+          <h1 id="page-title">Hagamos lugar<br>para <em>encontrarnos.</em></h1>
+          <p class="intro-copy">Una mesa, un rato sin apuro y algo que aprender. Reservá tu próximo encuentro en el club.</p>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel booking-panel" aria-labelledby="booking-title">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <div><p class="eyebrow">TU PRÓXIMO ENCUENTRO</p><h2 id="booking-title">Reservar un lugar</h2></div>
+          </div>
+          <form id="booking-form" novalidate>
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="¿Cómo te llamás?">
+
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="date" type="date" required>
+
+            <fieldset class="time-fields">
+              <legend>Horario</legend>
+              <div><label for="inicio">Desde</label><input id="inicio" name="start" type="time" required></div>
+              <span class="time-divider" aria-hidden="true">a</span>
+              <div><label for="fin">Hasta</label><input id="fin" name="end" type="time" required></div>
+            </fieldset>
+
+            <label for="recurso">Elegí tu mesa</label>
+            <select id="recurso" name="resource" required>
+              <option value="" disabled selected>Seleccionar mesa</option>
+              <option value="Lectura">Mesa de Lectura</option>
+              <option value="Repaso">Mesa de Repaso</option>
+            </select>
+
+            <label for="motivo">Materia o motivo</label>
+            <textarea id="motivo" name="reason" rows="3" maxlength="180" required placeholder="¿Qué te gustaría estudiar?"></textarea>
+            <button class="button button-primary" type="submit">Reservar encuentro <span aria-hidden="true">↗</span></button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <div class="right-column">
+          <section class="panel appointments-panel" aria-labelledby="appointments-title">
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <div><p class="eyebrow">EL CLUB SE MUEVE</p><h2 id="appointments-title">Próximos encuentros</h2></div>
+            </div>
+            <div id="appointment-list" class="appointment-list" aria-live="polite"></div>
+          </section>
+
+          <section id="receipt" class="panel receipt-panel" aria-labelledby="receipt-title" hidden>
+            <div class="receipt-topline"><span class="section-number">03</span><span class="receipt-stamp">ENTRE LÍNEAS · COMPROBANTE</span></div>
+            <div class="section-heading receipt-heading"><div><p class="eyebrow">UN LUGAR RESERVADO</p><h2 id="receipt-title">Nos vemos pronto.</h2></div><span class="receipt-star" aria-hidden="true">✳</span></div>
+            <div class="receipt-content"></div>
+            <p id="receipt-status" class="receipt-note"></p>
+            <button id="print-receipt" class="button button-outline" type="button">Imprimir comprobante <span aria-hidden="true">↗</span></button>
+          </section>
+        </div>
+      </div>
+
+      <aside class="club-note" aria-label="Acerca de las mesas">
+        <span class="note-symbol" aria-hidden="true">✳</span>
+        <p><strong>Dos mesas, muchas ideas.</strong> Lectura y Repaso son espacios de demostración para organizar tu tiempo de estudio.</p>
+        <span class="note-tail">HECHO PARA COMPARTIR</span>
+      </aside>
+    </main>
+
+    <footer class="footer"><span>ENTRE LÍNEAS <span class="footer-dot">·</span> CLUB DE ESTUDIO</span><span>SARA COHEN <span class="footer-dot">·</span> BUENOS AIRES</span></footer>
+  </div>
+</body>
+</html>
